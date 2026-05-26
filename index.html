@@ -2,12 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>AJAX with PHP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full-Stack Fetch Sandbox</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 0 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    button:hover {
+      background-color: #f0f0f0;
+    }
+    /* Dynamic UI Containers */
+    #result {
+      margin-top: 30px;
+      font-size: 1.25rem;
+      font-weight: 500;
+      padding: 15px;
+      border-radius: 4px;
+    }
+    #error-display {
+      display: none; /* Hidden by default */
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #fdf2f2;
+      border: 1px solid #f8b4b4;
+      border-radius: 4px;
+      color: #9b1c1c;
+      font-family: monospace;
+      text-align: left;
+      white-space: pre-wrap;
+    }
+  </style>
 </head>
 <body>
-  <h1>AJAX Test</h1>
-  <button id="fetchData">Fetch Data</button>
-  <div id="result"></div>
+
+  <h1>Full-Stack Fetch Sandbox</h1>
+  <button id="fetchData">Fetch Data from Server</button>
+  
+  <div id="result">Click the button to ping the server...</div>
+  
+  <div id="error-display"></div>
 
   <script src="script.js"></script>
 </body>
